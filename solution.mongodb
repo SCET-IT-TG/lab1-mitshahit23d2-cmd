@@ -1,4 +1,3 @@
-use examDB
 db.students.insertOne({
   name:"Mit Shah",
   div:"A",
@@ -66,4 +65,5 @@ examDb> db.students.insertOne({
    { name: "Thermodynamics", department: "ME", semester: 2 },
    { name: "Concrete Technology", department: "CE", semester: 4 }
  ])
+
 
