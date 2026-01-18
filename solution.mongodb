@@ -1,4 +1,5 @@
 use examDB
+db.dropDatabase()
 
 db.students.insertMany([
   {
