@@ -1,0 +1,14 @@
+db.students.insertOne({
+  name:"Mit Shah",
+  div:"A",
+  mobile:"9998961516",
+  department: "IT",
+  semester: 4})
+
+db.students.insertOne({ 
+  name:"Smit Patel", 
+  div:"B",
+  mobile:"94284655444",
+  department: "IT",
+  semester: 5})
+
