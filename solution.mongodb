@@ -12,3 +12,58 @@ db.students.insertOne({
   mobile:"94284655444",
   department: "IT",
   semester: 5})
+
+db.students.insertOne({name:"meet patel",department:"IT",semester:6,mobile:"9998961518"})
+db.students.insertOne({name:"Heet Shah",department:"IT",semester:6,mobile:"9428465445"})
+
+ db.subjects.insertOne({
+	course_name: "IT",
+	subject_list: ["DMBI", "WT", "CNS", "NOSQL", "AIA"]})
+
+db.subjects.insertOne({ 
+	course_name: "CO", 
+	subject_list: ["AI-ML", "AWT", "DBMS", "PYTHON", "AIA"] })
+
+
+db.faculty.insertOne({
+    department: "IT",
+    teachers: {
+        name: "Tushar Gohil",
+        experience: "20" 
+        } 
+     })
+
+db.faculty.insertOne({ 
+    department: "IT",
+    teachers: {
+        name: "Vibha Patel",
+        experience: "15" }
+    })
+
+db.faculty.insertOne({
+    department: "IT",
+    teachers: {
+        name: "Vivaksha Jariwala",
+        experience: "20" }
+    })
+
+db.students.insertOne({
+  _id: new ObjectId(),
+  name: "Ravi Kumar",
+  department: "ME",
+  semester: 5
+})
+
+examDb> db.students.insertOne({
+   _id: "STU101",
+   name: "Anjali Singh",
+   department: "CS",
+   semester: 3
+ })
+
+ db.courses.insert([
+   { name: "Data Structures", department: "CS", semester: 3 },
+   { name: "Thermodynamics", department: "ME", semester: 2 },
+   { name: "Concrete Technology", department: "CE", semester: 4 }
+ ])
+
