@@ -12,6 +12,13 @@ db.students.insertOne({
   department: "IT",
   semester: 5})
 
+db.students.insertOne({ 
+  name:"Rahul Roy", 
+  div:"B",
+  mobile:"1234567891",
+  department: "IT",
+  semester: 5})
+
 db.students.insertOne({name:"meet patel",department:"IT",semester:6,mobile:"9998961518"})
 db.students.insertOne({name:"Heet Shah",department:"IT",semester:6,mobile:"9428465445"})
 
@@ -65,5 +72,6 @@ examDb> db.students.insertOne({
    { name: "Thermodynamics", department: "ME", semester: 2 },
    { name: "Concrete Technology", department: "CE", semester: 4 }
  ])
+
 
 
