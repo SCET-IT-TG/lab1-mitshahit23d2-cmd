@@ -1,52 +1,96 @@
-use examDB
+db = db.getSiblingDB("examDB");
 
-db.students.insertMany([
-  {
-    name: "Mit Shah",
-    div: "A",
-    mobile: "9998961516",
+// Exercise 01
+db.students.insertOne({
+    name: "Aarav Sharma",
     department: "IT",
-    semester: 4
-  },
-  {
-    name: "Smit Patel",
-    div: "B",
-    mobile: "94284655444",
-    department: "IT",
-    semester: 5
-  },
-  {
-    name: "Rahul Roy",
-    div: "B",
-    mobile: "1234567891",
-    department: "IT",
-    semester: 5
-  },
-  {
-    name: "meet patel",
-    department: "IT",
-    semester: 6,
-    mobile: "9998961518"
-  },
-  {
-    name: "Heet Shah",
-    department: "IT",
-    semester: 6,
-    mobile: "9428465445"
-  }
-])
+    semester: 4,
+    mobile: "9876543210"
+  });
 
+db.students.insertOne({
+    name: "Vikram Singh",
+    department: "IT",
+    semester: 5,
+    mobile: "9898123456"
+  });
+
+db.students.insertOne({
+    name: "Ananya Iyer",
+    department: "CO",
+    semester: 7,
+    mobile: "9988776655"
+  });
+
+db.students.insertOne({
+    name: "Ishita Patel",
+    department: "CO",
+    semester: 6,
+    mobile: "8877665544"
+  });
+
+// Exercise 02
+db.students.insertOne({
+    name: "Rohan Deshmukh",
+    department: "IT",
+    semester: 3,
+    mobile: "9123456789"
+  });
+
+// Exercise 03
 db.subjects.insertOne({
-  course_name: "IT",
-  subject_list: ["DMBI", "WT", "CNS", "NOSQL", "AIA"]
-})
+    course_name: "IT",
+    subject_list: ["OS","DB","CNS"]
+  });
 
+
+// Exercise 04
 db.faculty.insertOne({
   department: "IT",
   teachers: [
-    { name: "Tushar Gohil", experience: "20" },
-    { name: "Vibha Patel", experience: "15" },
-    { name: "Vivaksha Jariwala", experience: "20" }
+    {name: "Ramesh Gupta", experience: 30},
+    {name: "Suresh Reddy", experience: 25},
+    {name: "Amitabh Verma", experience: 30},
+    {name: "Sunita Rao", experience: 12}
   ]
-})
+  });
 
+// Exercise 05
+db.students.insertOne({
+    _id: ObjectId(),
+    name: "Priya Kapoor",
+    department: "IT",
+    semester: 1,
+    mobile: "8888899999"
+});
+
+// Exercise 06
+db.students.insertOne({
+    _id: ObjectId("6961039739e25d682b1e2630"),
+    name: "Kabir Malhotra",
+    department: "EC",
+    semester: 4,
+    mobile: "7777788888"
+  });
+
+db.students.insertOne({
+    _id: ObjectId("6961039739e25d682b1e2630"),
+    name: "Meera Joshi",
+    department: "CO",
+    semester: 3,
+    mobile: "9988112233"
+  });
+// Exercise 07
+db.students.insert({
+    name: "Kavya Nair",
+    department: "IT",
+    semester: 5,
+    mobile: "9876123456"
+});
+
+db.students.insert({
+    name: "Arjun Mehta",
+    department: "Civil",
+    semester: 7,
+    mobile: "9123987654"
+});
